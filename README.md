@@ -8,8 +8,13 @@ This class will handle multiplication and division as well but only by an intege
 5p 17s 8d * 2 = 11p 15s 4d 
 5p 17s 8d / 3 = 1p 19s 2d (2d) 18p 16s 1d / 15 = 1p 5s 0d (1s 1d) 
 As shown above in division examples you need to report as well the remainder (if any) in round brackets. 
+
 Extra points 
+
 Although this test requires just the implementation of a class that manages the 4 operations mentioned above, it would be quite distinctive to design the class in a way that creates instances of itself in which it is possible to call methods upon with the possibility to chain them together: 
+
 $priceA = new OldEnglishPound(“5p 17s 8d”); $priceB = new OldEnglishPound(“3p 4s 10d”); 
+
 $sum = $priceA.sum($priceB); 
-$result = $priceA.sum($priceB).multiply(2).div(3);
+
+$result = $priceA.sum($priceB).multiply(2).div(3)
